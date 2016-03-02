@@ -1,4 +1,4 @@
-
+import sys
 from datetime import datetime
 # To get here:
 # https://github.com/evernote/evernote-sdk-python3
@@ -21,11 +21,12 @@ notebooks = note_store.listNotebooks()
 def findNotebook(notebooks):
     for notebook in notebooks:
         if notebook.name == notebook_name:
-        return notebook
+            return notebook
     return None
 notebook_to_use = findNotebook(notebooks)
 if not notebook_to_use:
     print("Error. The notebook '%s' does not exists" % notebook_name)
+    sys.exit(-1)
 
 print("Going to create the note in notebook '%s'" % notebook_name)
 note = Types.Note()
