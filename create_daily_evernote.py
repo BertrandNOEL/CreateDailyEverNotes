@@ -1,7 +1,9 @@
 import sys
 from datetime import datetime
 # To get here:
+# https://github.com/evernote/evernote-sdk-python
 # https://github.com/evernote/evernote-sdk-python3
+# > sudo python setup.py install
 import evernote.edam.type.ttypes as Types
 from evernote.api.client import EvernoteClient
 
