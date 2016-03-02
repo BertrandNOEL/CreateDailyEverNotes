@@ -39,6 +39,16 @@ note.title = datetime.now().strftime(title_format_date)
 note.content = '<?xml version="1.0" encoding="UTF-8"?>'
 note.content += '<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">'
 note.content += '<en-note>'
+note.content += '<u>TODO</u><br/>'
+note.content += '<br/>'
+note.content += '- <br/>'
+note.content += '- <br/>'
+note.content += '- <br/>'
+note.content += '- <br/>'
+note.content += '<br/><br/>'
+note.content += '<hr></hr><br/>'
+note.content += '<u>Notes</u><br/>'
+note.content += '<br/><br/><br/><br/><br/><br/><br/>'
 note.content += '</en-note>'
 
 created_note = note_store.createNote(note)
